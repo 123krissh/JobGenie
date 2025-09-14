@@ -70,7 +70,7 @@ export default async function JobInfoPage({
       <div className="space-y-6">
         <header className="space-y-4">
           <div className="space-y-2">
-            <h1 className="text-3xl md:text-4xl">
+            <h1 className="text-3xl md:text-4xl text-primary font-bold">
               <SuspendedItem
                 item={jobInfo}
                 fallback={<Skeleton className="w-48" />}
