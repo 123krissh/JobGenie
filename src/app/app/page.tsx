@@ -59,7 +59,7 @@ async function JobInfos() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 has-hover:*:not-hover:opacity-70">
         {jobInfos.map(jobInfo => (
           <Link
-            className="hover:scale-[1.02] transition-[transform_opacity]"
+            className="border-1 border-transparent rounded-xl transition-all hover:scale-[1.02] hover:border-primary"
             href={`/app/job-infos/${jobInfo.id}`}
             key={jobInfo.id}
           >

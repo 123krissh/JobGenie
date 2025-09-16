@@ -108,7 +108,7 @@ export default async function JobInfoPage({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 has-hover:*:not-hover:opacity-70">
           {options.map(option => (
             <Link
-              className="hover:scale-[1.02] transition-[transform_opacity]"
+              className="hover:scale-[1.02] transition-[transform_opacity] hover:border-primary border-1 rounded-xl"
               href={`/app/job-infos/${jobInfoId}/${option.href}`}
               key={option.href}
             >

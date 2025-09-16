@@ -74,7 +74,7 @@ async function SuspendedPage({ jobInfoId }: { jobInfoId: string }) {
         </Link>
         {interviews.map(interview => (
           <Link
-            className="hover:scale-[1.02] transition-[transform_opacity]"
+            className="hover:scale-[1.02] transition-[transform_opacity] hover:border-primary border-1 rounded-xl"
             href={`/app/job-infos/${jobInfoId}/interviews/${interview.id}`}
             key={interview.id}
           >

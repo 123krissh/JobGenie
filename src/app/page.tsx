@@ -76,7 +76,7 @@ async function NavButton() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden py-20 sm:py-32">
+    <section className="relative overflow-hidden py-20 sm:py-40">
       <div className="container">
         <div className="text-center">
           <h2 className="text-3xl sm:text-5xl font-bold text-foreground mb-6 leading-tight">
@@ -128,7 +128,7 @@ function Features() {
           {features.map(feature => (
             <Card
               key={feature.title}
-              className="transition-all duration-300 transform hover:-translate-y-1"
+              className="transition-all duration-300 transform hover:-translate-y-1 border-primary/50 hover:shadow-xl h-full"
             >
               <CardHeader className="pb-4">
                 <div className="w-16 h-16 mb-4 bg-primary/10 flex items-center justify-center rounded-lg">
@@ -203,7 +203,7 @@ function DetailedFeatures() {
                 </li>
               </ul>
             </div>
-            <div className="bg-card rounded-2xl p-6 border border-border shadow-lg">
+            <div className="bg-card rounded-2xl p-6 border-primary/50 border shadow-lg">
               <div className="bg-muted/50 rounded-lg p-4 mb-4">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
@@ -278,7 +278,7 @@ function DetailedFeatures() {
                 </li>
               </ul>
             </div>
-            <div className="lg:order-1 bg-card rounded-2xl p-6 border border-border shadow-lg">
+            <div className="lg:order-1 bg-card rounded-2xl p-6 border-primary/50 border shadow-lg">
               <div className="mb-4">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-sm font-medium text-foreground">
@@ -360,7 +360,7 @@ function DetailedFeatures() {
                 </li>
               </ul>
             </div>
-            <div className="bg-card rounded-2xl p-6 border border-border shadow-lg">
+            <div className="bg-card rounded-2xl p-6 border-primary/50 border shadow-lg">
               <div className="bg-muted/50 rounded-lg p-4 mb-4">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-sm font-medium text-foreground">
@@ -646,7 +646,7 @@ function Footer() {
             tools.
           </p>
           <p className="text-muted-foreground p-1 text-xs">
-            All contents © 2025 JobGenie. All rights reserved.
+            All contents © 2025 <span className="text-primary">JobGenie 🤖</span>. All rights reserved.
           </p>
         </div>
       </div>

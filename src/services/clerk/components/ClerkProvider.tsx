@@ -29,7 +29,7 @@ export function ClerkProvider({ children }: { children: ReactNode }) {
         },
         elements: {
           pricingTableCard:
-            "custom-pricing-table bg-none bg-[unset] border border-border p-6 my-3",
+            "custom-pricing-table bg-none bg-[unset] border-amber-300/50 border p-6 my-3",
           pricingTableCardHeader: "p-0 pb-12",
           pricingTableCardTitle: "text-xl",
           pricingTableCardBody:
